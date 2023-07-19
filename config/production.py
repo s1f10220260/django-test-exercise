@@ -4,7 +4,7 @@ from .settings import *
 DEBUG = True
 SECRET_KEY = os.environ['SECRET_KEY']
 ALLOWED_HOSTS.append(os.environ[ 'RENDER_EXTERNAL_HOSTNAME'])
-MIDDLEWARE.insert(1, 'whitenoise.middleware. WhiteNoiseMiddleware')
+MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 DATABASES = {
 'default': dj_database_url.config()
 }
